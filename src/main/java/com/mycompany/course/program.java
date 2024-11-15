@@ -14,16 +14,12 @@ public class program {
     public static void main(String[] args) {
        Scanner in = new Scanner(System.in);
        
-       factorial calc =new factorial();
-       long n=in.nextLong();
-       System.out.print(calc.calculateFactorial(n));
+       factorial calcDouble= new factorial(5.0);
+       System.out.println(calcDouble.calculateFactorial(calcDouble.getDoubleN()));
+       
+       factorial calcLong= new factorial(6);
+       System.out.println(calcLong.calculateFactorial(calcLong.getLongN()));
     }
 
 }
-/*
-String s= in.nextLine();
-       s+=in.nextLine();
-       in.close();
 
-read string in java with space
-*/
